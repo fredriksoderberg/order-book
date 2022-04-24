@@ -45,8 +45,8 @@ public class OrderBookProcessor {
   }
 
   @GetMapping("order_summary/{ticker}")
-  public OrderSummaryEntity getOrderSummaryByTicker(@PathVariable String ticker,
-      @RequestParam String date) {
+  public OrderSummaryEntity getOrderSummaryByTicker(
+      @PathVariable String ticker, @RequestParam String date) {
     try {
       return orderBookService.getSummary(ticker, date);
     } catch (BadRequestException bre) {
@@ -56,5 +56,3 @@ public class OrderBookProcessor {
     }
   }
 }
-
-

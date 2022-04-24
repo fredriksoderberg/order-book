@@ -11,14 +11,14 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class OrderSummaryEntity {
-    double averageBuyPrice;
-    double minBuyPrice;
-    double maxBuyPrice;
-    double averageSellPrice;
-    double minSellPrice;
-    double maxSellPrice;
-    long buyOrderCount;
-    long sellOrderCount;
-    String ticker;
-    LocalDate date;
+  double averageBuyPrice;
+  double minBuyPrice;
+  double maxBuyPrice;
+  double averageSellPrice;
+  double minSellPrice;
+  double maxSellPrice;
+  long buyOrderCount;
+  long sellOrderCount;
+  String ticker;
+  LocalDate date;
 }

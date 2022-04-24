@@ -22,7 +22,7 @@ import lombok.ToString;
 @ToString
 public class OrderEntity {
 
-  @Id 
+  @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   long id;
 
@@ -33,7 +33,7 @@ public class OrderEntity {
   int volume;
 
   @Column(name = "price", nullable = false)
-  float price;
+  double price;
 
   @Column(name = "currency", nullable = false)
   String currency;

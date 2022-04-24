@@ -61,7 +61,7 @@ public class OrderBookService {
     }
   }
 
-  private void updateOrderSummary(final OrderEntity order) {
+  protected void updateOrderSummary(final OrderEntity order) {
     OrderSummaryEntity orderSummary = summaryEntityMap.get(
         buildOrderSummaryKey(order.getTicker(), order.getTime().toLocalDate().toString()));
 

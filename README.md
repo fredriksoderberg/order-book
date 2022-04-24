@@ -1,12 +1,16 @@
 # Order book
 
+* Allows creation and fetching of orders in an order book
+* Orders are persisted in a Postgres database (running locally)
+* Order summaries are stored in memory and can be fetched per ticker and date
+
 ### Build and run
 
 #### Docker
 
 Requires Java 17
 
-`mvn clean package -DskipTests`
+`mvn clean package`
 
 `docker-compose up -d`
 
